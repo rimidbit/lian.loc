@@ -1,0 +1,25 @@
+.foot{
+    text-align: center;
+    padding: 40px 0 15px 0;
+}
+
+.footSocialBtn{
+    margin: 30px 0;
+}
+
+.footSocialBtn a{
+    margin-right: 40px;
+}
+
+.footSocialBtn a:last-child{
+    margin-right: 0;
+}
+
+small{
+    text-transform: uppercase;
+    color: #9c9c9c;
+}
+
+small span{
+    color: #202020;
+}

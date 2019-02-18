@@ -1,0 +1,84 @@
+.headItems{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.headItems__logo{
+    margin: 20px 0;
+}
+
+.headItems__nav{
+    display: flex;
+    align-items: center;
+}
+
+.headItems__nav-btn{
+    text-transform: uppercase;
+    color: #777777;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+    display: none;
+}
+
+.headItems__nav:before{
+    content: url("../img/decor-line.png");
+}
+
+.headItems__nav a{
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.headItems__nav a:hover{
+    color: #000;
+}
+
+@media screen and (max-width: 570px){
+    .headItems{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .headItems{
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .headItems__nav{
+        display: none;
+    }
+
+    .headItems__nav:before{
+        content: none;
+    }
+
+    #nav{
+        display: block;
+        z-index: 5;
+        position: absolute;
+        text-align: center;
+        top: 85px;
+        width: 80%;
+        margin: 0 10%;
+        background-color: #9c9c9c;
+    }
+
+    #nav a{
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    .headItems__nav-btn{
+        display: block;
+    }
+}
+

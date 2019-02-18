@@ -1,0 +1,157 @@
+.mainAbout__head{
+    background-image: url("../images/bg-about.jpg");
+    background-position: center;
+    text-transform: uppercase;
+    min-height: 350px;
+}
+
+.head__h1{
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 5px 30px;
+    margin: 110px 0 25px 0;
+}
+
+.head__subtitle{
+    display: block;
+    font-size: 1.2em;
+    color: #777777;
+}
+
+.storyItems__img{
+    float: left;
+    margin-right: 50px;
+}
+
+.mainAbout__h2{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.mainAbout__story{
+    padding: 50px 0;
+    background-color: #fafafa;
+}
+
+.mainAbout__storyItems{
+    margin-bottom: 100px;
+}
+
+.mainAbout__storyItems p{
+    color: #777777;
+    line-height: 2;
+    margin: 40px 0;
+}
+
+.skillsItem{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.skillsItem__headLevel{
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.skills-h2{
+    margin-bottom: 25px;
+}
+
+.mainAbout__team{
+    text-align: center;
+}
+
+.team__head{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.mainAbout__team p{
+    color: #777777;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+.team__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.team__member{
+    flex-basis: calc(33% - 30px);
+    margin: 0 15px;
+}
+
+.team__member-text{
+    padding: 30px;
+    background-color: #fff;
+    max-width: 355px;
+}
+
+.team__member-text h2{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.team__member-text span{
+    font-weight: 700;
+}
+
+.team__member-text p{
+    line-height: 1.5;
+    color: #777777;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 976px){
+    .mainAbout__storyItems{
+        text-align: center;
+    }
+
+    .storyItems__img{
+        float: none;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .mainAbout__skills{
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .skillsItem__headLevel{
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .team__items{
+        justify-content: space-around;
+    }
+
+    .team__member{
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 590px){
+    .team__member{
+        flex-basis: calc(100% - 30px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

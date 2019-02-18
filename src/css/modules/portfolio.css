@@ -1,0 +1,6 @@
+.mainPortfolio__head{
+    background-image: url("../images/bg-portfolio.jpg");
+    background-position: center;
+    text-transform: uppercase;
+    min-height: 348px;
+}
